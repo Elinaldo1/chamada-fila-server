@@ -6,9 +6,9 @@
   "license": "MIT",
   "engines": {"node": "16.17.0"},
   "scripts": {
-    "start": "npm run postinstall && node dist/server.js", 
+    "start": "node ./dist/server.js", 
     "postinstall": "tsc", 
-    "watch-node": "nodemon dist/index.js", 
+    "watch-node": "nodemon ./dist/server.js", 
     "watch-ts": "tsc - w", 
     "deploy": "git add . && git commit -m Heroku && git push heroku master", 
     "dev": "tsx watch ./src/server.ts"
