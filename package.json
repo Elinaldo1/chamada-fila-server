@@ -4,9 +4,13 @@
   "main": "index.js",
   "author": "Elinado Sa",
   "license": "MIT",
+  "engines": {"node": "16.17.0"},
   "scripts": {
-    "build": "sucrase ./src -d ./dist --transforms imports",
-    "start": "node dist/server.js",
+    "start": "node dist/server.js", 
+    "postinstall": "tsc", 
+    "watch-node": "nodemon dist/index.js", 
+    "watch-ts": "tsc - w", 
+    "deploy": "git add . && git commit -m Heroku && git push heroku master", 
     "dev": "tsx watch ./src/server.ts"
   },
   "devDependencies": {
