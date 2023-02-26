@@ -19,8 +19,5 @@ const io = new Server(server, {
     }
 });
 
-app.get('/', (req, res) => {
-    res.send('hello world');
-})
 
-export { server, io }
+export { app, server, io }
