@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Elinado Sa",
   "license": "MIT",
+  "type": "module",
   "engines": {
     "node": "16.17.0"
   },
