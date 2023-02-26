@@ -4,10 +4,9 @@
   "main": "index.js",
   "author": "Elinado Sa",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "dev": "tsx watch ./src/server.ts",
-    "start": "node ./src/server"
+    "start": "node ./src/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
